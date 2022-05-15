@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.headings{
+    font-family: Arapey;
+    font-weight: normal;
+}
+.heading_h1{
+    font-size: 60px;
+    color: #9db0d1;
+}
+.heading_h2{
+    font-size: 40px;
+}
+.heading-white{
+    color:#fff;
+}
+
+.text-content{
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+.btn{
+    font-family: Arapey;
+    font-size: 30px;
+    line-height: 32px;
+    padding: 24px 50px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    max-width: fit-content;
+}
+.btn-red{
+    background-color: #ebac87;
+    color: #fff;
+}
+.btn-white{
+    background-color: #fff;
+    color: #ebac87;
+}
+
+.btn_faq{
+    font-family: Verdana;
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.btn_icons{
+    background-color: transparent;
+    border: none;
+}
+
+.header{
+    padding: 110px 130px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header_textElements{
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+.header_btn{
+    align-self: center;
+}
+.header_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.header_listItem{
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    margin-right: 50px;
+}
+.header_listCircle{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #9db0d1;
+    padding: 18px 15px;
+    margin-right: 15px;
+}
+
+.main_heading{
+    background: url(../imgs/clouds.svg) no-repeat left 10px top / auto 200px,
+                linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
+    padding: 250px 120px 50px;
+    text-align: center;
+}
+.main_cards{
+    padding: 0px 120px 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #87c6eb;
+}
+.main_cardsItem{
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+.main_cardsItem:not(:last-child){
+    margin-right: 75px;
+}
+.cardsItem_number{
+    background: rgba(235, 172, 135, 0.6);
+    color: #fff;
+    font-family: Verdana;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.cardsItem_img{
+    background-color: #ebac87;
+    width: 310px;
+    height: 310px;
+    margin-bottom: 20px;
+}
+
+.main_cardsItem .text-content{
+    padding-right: 50px;
+}
+
+.main_snowPeak{
+    padding: 40px 720px 50px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #87c6eb url(../imgs/snowPeak.png)  no-repeat right 120px bottom;
+    position: relative;
+}
+.main_snowPeak .heading_h2,
+.main_snowPeak .text-content{
+    margin-bottom: 50px;
+}
+
+.main_snowPeak .btn_faq{
+    position: absolute;
+    right: 120px;
+    bottom: 50px;
+}
+
+.footer{
+    padding: 50px 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_icons{
+    display: flex;
+}
