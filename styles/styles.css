@@ -1,7 +1,15 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* шрифты
+    font-family: Arapey; для заголовков и кнопок
+    font-family: Verdana; для текста
+   цвета
+    #9db0d1 - h1, кружочки
+    #ebac87 - кнопки текст, карточки? кнопки бэкграунд
+    rgba(235, 172, 135, 0.6) оттенки для номеров карточек
+    rgba(235, 172, 135, 0.4)
+    #87c6eb - голубой для бэкграунда
+*/
+body{
+    background: url(../imgs/clouds.svg) no-repeat center top 27%, linear-gradient(#fff 26%, #87c6eb 44%);
 }
 
 .headings{
@@ -33,6 +41,7 @@
     border: 1px solid transparent;
     text-transform: uppercase;
     max-width: fit-content;
+    min-width: 220px;
 }
 .btn-red{
     background-color: #ebac87;
@@ -78,10 +87,10 @@
     justify-content: space-between;
 }
 .header_listItem{
-    display: flex;
-    white-space: nowrap;
+    display: inline-flex;
+    /*white-space: nowrap;*/
     align-items: center;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
 }
 .header_listCircle{
     height: 60px;
@@ -91,10 +100,9 @@
     padding: 18px 15px;
     margin-right: 15px;
 }
-
 .main_heading{
-    background: url(../imgs/clouds.svg) no-repeat left 10px top / auto 200px,
-                linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
+    /*background: url(../imgs/clouds.svg) no-repeat left 10px top / auto 200px,*/
+    /* linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);*/
     padding: 250px 120px 50px;
     text-align: center;
 }
@@ -103,18 +111,18 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-color: #87c6eb;
+    /*background-color: #87c6eb;*/
 }
 .main_cardsItem{
     border-radius: 10px;
     background-color: #fff;
     padding: 20px;
+    max-width: 350px;
 }
 .main_cardsItem:not(:last-child){
-    margin-right: 75px;
+    margin-right: 5px;
 }
 .cardsItem_number{
-    background: rgba(235, 172, 135, 0.6);
     color: #fff;
     font-family: Verdana;
     font-size: 30px;
@@ -124,6 +132,15 @@
     text-align: center;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+.card_number-light{
+    background: rgba(235, 172, 135, 0.4);
+}
+.card_number-medium{
+    background: rgba(235, 172, 135, 0.6);
+}
+.card_number-dark{
+    background: #ebac87;
 }
 .cardsItem_img{
     background-color: #ebac87;
@@ -141,7 +158,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #87c6eb url(../imgs/snowPeak.png)  no-repeat right 120px bottom;
+    /*background: #87c6eb url(../imgs/snowPeak.png)  no-repeat right 120px bottom;*/
     position: relative;
 }
 .main_snowPeak .heading_h2,
