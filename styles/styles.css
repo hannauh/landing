@@ -15,6 +15,7 @@ body{
 .headings{
     font-family: Arapey;
     font-weight: normal;
+    line-height: 43.84px;
 }
 .heading_h1{
     font-size: 60px;
@@ -29,6 +30,7 @@ body{
 
 .text-content{
     font-size: 20px;
+    line-height: 24.31px;
     font-family: Verdana;
 }
 
@@ -42,6 +44,7 @@ body{
     text-transform: uppercase;
     max-width: fit-content;
     min-width: 220px;
+    cursor: pointer;
 }
 .btn-red{
     background-color: #ebac87;
@@ -61,6 +64,7 @@ body{
     line-height: 80px;
     border-radius: 50%;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .btn_icons{
@@ -68,11 +72,13 @@ body{
     border: none;
 }
 
+.btn_icons img{
+    cursor: pointer;
+}
+
 .header{
     padding: 110px 130px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
 }
 .header_textElements{
     margin: 0 0 50px 0;
@@ -84,13 +90,18 @@ body{
 .header_list{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .header_listItem{
     display: inline-flex;
-    /*white-space: nowrap;*/
     align-items: center;
-    /*margin-right: 50px;*/
+    margin:0 25px;
+}
+.header_listItem:first-child{
+    margin-left: 0px;
+}
+.header_listItem:last-child{
+margin-right: 0px;
 }
 .header_listCircle{
     height: 60px;
@@ -110,7 +121,7 @@ body{
     padding: 0px 120px 35px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     /*background-color: #87c6eb;*/
 }
 .main_cardsItem{
@@ -118,9 +129,10 @@ body{
     background-color: #fff;
     padding: 20px;
     max-width: 350px;
+    margin-right: 75px;
 }
-.main_cardsItem:not(:last-child){
-    margin-right: 5px;
+.main_cardsItem:last-child{
+    margin-right: 0px;
 }
 .cardsItem_number{
     color: #fff;
@@ -154,16 +166,17 @@ body{
 }
 
 .main_snowPeak{
-    padding: 40px 720px 50px 120px;
+    padding: 40px 120px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*background: #87c6eb url(../imgs/snowPeak.png)  no-repeat right 120px bottom;*/
+    background: #87c6eb url(../imgs/snowPeak.png)  no-repeat right 120px bottom;
     position: relative;
 }
 .main_snowPeak .heading_h2,
 .main_snowPeak .text-content{
     margin-bottom: 50px;
+    max-width: 590px;
 }
 
 .main_snowPeak .btn_faq{
