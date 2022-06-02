@@ -10,6 +10,9 @@
 */
 body{
     background: url(../imgs/clouds.svg) no-repeat center top 27%, linear-gradient(#fff 26%, #87c6eb 44%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headings{
@@ -186,10 +189,17 @@ margin-right: 0px;
 }
 
 .footer{
-    padding: 50px 120px;
+    padding: 50px 0;
     background-color: #fff;
+    align-self: stretch;
+}
+.footer_wrapper{
+    max-width: 1440px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+.footer_btn{
+    margin-right: 753px;
 }
 .footer_icons{
     display: flex;
